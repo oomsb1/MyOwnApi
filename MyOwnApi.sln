@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyOwnApi", "MyOwnApi\MyOwnApi.csproj", "{010F8078-E298-4FB7-A3E5-0E0D04EA4801}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyOwnApi", "MyOwnApi\MyOwnApi.csproj", "{010F8078-E298-4FB7-A3E5-0E0D04EA4801}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyOwnApi.DAL", "MyOwnApi.DAL\MyOwnApi.DAL.csproj", "{E39C6E55-F612-46FE-8888-A1706D612C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyOwnApi.DAL", "MyOwnApi.DAL\MyOwnApi.DAL.csproj", "{E39C6E55-F612-46FE-8888-A1706D612C37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyOwnAPI.Domain", "MyOwnAPI.Core\MyOwnAPI.Domain.csproj", "{470D21F9-5CFA-4069-8970-C9A8D864D794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyOwnAPI.Domain", "MyOwnAPI.Core\MyOwnAPI.Domain.csproj", "{470D21F9-5CFA-4069-8970-C9A8D864D794}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyNewAPI.Application", "MyNewAPI.Application\MyNewAPI.Application.csproj", "{949FF685-8C4C-4A38-8C63-D8DDB2A30AEF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyOwnAPI.Application", "MyNewAPI.Application\MyOwnAPI.Application.csproj", "{949FF685-8C4C-4A38-8C63-D8DDB2A30AEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 API", "0 API", "{F121B733-4C3B-491B-A5ED-66E0EE59FCE7}"
 EndProject
