@@ -8,7 +8,7 @@ namespace MyOwnApi.MapperProfiles
     {
         public MapperProfile()
         {
-            CreateMap<Chauffeur, ChauffeurDto>().ReverseMap();
+            CreateMap<Driver, DriverDto>().ReverseMap();
         }
     }
 }

@@ -1,8 +1,7 @@
 ﻿namespace MyNewAPI.Application.DTOs
 {
-    public class ChauffeurDto
+    public class DriverDto
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Nationality { get; set; }
     }
