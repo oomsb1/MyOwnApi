@@ -4,6 +4,7 @@ using MyOwnAPI.Application.Queries;
 
 namespace MyOwnApi.ReadControllers
 {
+    //TODO make API 100% RESTful
     [ApiController]
     [Route("api/read/driver")]
     public class ReadDriverController: ControllerBase
@@ -15,10 +16,16 @@ namespace MyOwnApi.ReadControllers
             _mediator = mediator;
         }
         [HttpGet]
-        public async Task<ActionResult> ReadChauffeursAsync(CancellationToken ct)
+        public async Task<ActionResult> ReadDriversAsync(CancellationToken ct)
         {
             var result = await _mediator.Send(new ReadAllDriversQuery(), ct);
             return Ok(result);
+        }
+        [HttpGet("{id}")]
+        public async Task<ActionResult> ReadDriverByIdAsync(int id, CancellationToken ct)
+        {
+            var result = await _mediator.Send(new ReadDriverQuery(id), ct);
+            return result == null ? throw new KeyNotFoundException() : Ok(result);
         }
     }
 }

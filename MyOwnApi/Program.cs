@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddScoped<IReadDbContext, MyApiDbContext>();
+builder.Services.AddScoped<IWriteDbContext, MyApiDbContext>();
 builder.Services.AddMediatR(config => config.RegisterServicesFromAssemblies(typeof(ReadAllDriversQuery).Assembly));
 builder.Services.AddMediatR(config => config.RegisterServicesFromAssemblies(typeof(ReadAllDriversHandler).Assembly));
 var app = builder.Build();

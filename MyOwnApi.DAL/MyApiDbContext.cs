@@ -7,7 +7,7 @@ using MyOwnAPI.Domain.Interfaces;
 
 namespace MyOwnApi.DAL
 {
-    public class MyApiDbContext: DbContext, IReadDbContext
+    public class MyApiDbContext: DbContext, IReadDbContext, IWriteDbContext
     {
         public virtual DbSet<Driver> Chauffeurs { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
